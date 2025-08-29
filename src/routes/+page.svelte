@@ -120,7 +120,7 @@
 		<!-- Logo -->
 		<div class="group relative">
 			<div
-				class="absolute -inset-4 bg-gradient-to-r from-primary-400 via-secondary-400 to-tertiary-400 opacity-25 blur-lg transition-opacity duration-500 group-hover:opacity-40"
+				class="absolute -inset-8 rounded-full bg-purple-400 opacity-30 blur-2xl transition-opacity duration-500 group-hover:opacity-60"
 			></div>
 			<div class="relative p-8">
 				<img
