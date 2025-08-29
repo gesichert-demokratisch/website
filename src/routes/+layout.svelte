@@ -23,7 +23,7 @@
 
 <svelte:head>
 	<title>Gesichert Demokratisch Münden</title>
-	<link rel="icon" href="/img/logo-round-1024x1024.png" />
+	<link rel="icon" href="/img/logo-round-192.webp" />
 </svelte:head>
 
 <div class="bg-surface-50-900-token text-token min-h-screen">

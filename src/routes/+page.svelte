@@ -16,8 +16,10 @@
 -->
 
 <script lang="ts">
-	import Particles, { particlesInit } from '@tsparticles/svelte';
-	import { loadSlim } from '@tsparticles/slim';
+	import { onMount } from 'svelte';
+
+	let ParticlesComponent: any = null;
+	let particlesLoaded = false;
 
 	const particlesConfig = {
 		background: {
@@ -71,9 +73,27 @@
 		detectRetina: true
 	};
 
-	// Initialize particles engine
-	void particlesInit(async (engine) => {
-		await loadSlim(engine);
+	// Lazy load particles after initial page render
+	onMount(async () => {
+		// Wait a bit for the page to settle
+		setTimeout(async () => {
+			try {
+				const [{ default: Particles, particlesInit }, { loadSlim }] = await Promise.all([
+					import('@tsparticles/svelte'),
+					import('@tsparticles/slim')
+				]);
+				
+				// Initialize particles engine
+				await particlesInit(async (engine) => {
+					await loadSlim(engine);
+				});
+				
+				ParticlesComponent = Particles;
+				particlesLoaded = true;
+			} catch (error) {
+				console.log('Failed to load particles:', error);
+			}
+		}, 100);
 	});
 </script>
 
@@ -82,7 +102,9 @@
 >
 	<!-- TSParticles background -->
 	<div class="absolute inset-0">
-		<Particles id="tsparticles" options={particlesConfig} class="h-full w-full" />
+		{#if particlesLoaded && ParticlesComponent}
+			<svelte:component this={ParticlesComponent} id="tsparticles" options={particlesConfig} class="h-full w-full" />
+		{/if}
 	</div>
 
 	<!-- Main content -->
@@ -96,9 +118,13 @@
 				class="relative rounded-full bg-white/10 p-8 shadow-2xl ring-1 ring-white/20 backdrop-blur-sm transition-all duration-500 group-hover:scale-105 group-hover:ring-white/30"
 			>
 				<img
-					src="/img/logo-round-1024x1024.png"
+					src="/img/logo-round-256.webp"
 					alt="Logo"
 					class="h-48 w-48 drop-shadow-2xl md:h-64 md:w-64"
+					loading="eager"
+					fetchpriority="high"
+					width="256"
+					height="256"
 				/>
 			</div>
 		</div>
