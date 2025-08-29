@@ -15,6 +15,10 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 
+<svelte:head>
+	<title>Gesichert Demokratisch Münden</title>
+</svelte:head>
+
 <script lang="ts">
 	import { onMount } from 'svelte';
 
