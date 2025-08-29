@@ -24,6 +24,19 @@
 <svelte:head>
 	<title>Gesichert Demokratisch Münden</title>
 	<link rel="icon" href="/img/logo-round-192.webp" />
+	
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Gesichert Demokratisch Münden" />
+	<meta property="og:image" content="/img/logo-1024x1024.png" />
+	<meta property="og:image:width" content="1024" />
+	<meta property="og:image:height" content="1024" />
+	<meta property="og:image:type" content="image/png" />
+	
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Gesichert Demokratisch Münden" />
+	<meta name="twitter:image" content="/img/logo-1024x1024.png" />
 </svelte:head>
 
 <div class="bg-surface-50-900-token text-token min-h-screen">
