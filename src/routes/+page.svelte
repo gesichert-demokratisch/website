@@ -117,14 +117,12 @@
 
 	<!-- Main content -->
 	<div class="relative z-10 flex flex-col items-center space-y-12">
-		<!-- Logo with fancy effects -->
+		<!-- Logo -->
 		<div class="group relative">
 			<div
-				class="absolute -inset-4 rounded-full bg-gradient-to-r from-primary-400 via-secondary-400 to-tertiary-400 opacity-25 blur-lg transition-opacity duration-500 group-hover:opacity-40"
+				class="absolute -inset-4 bg-gradient-to-r from-primary-400 via-secondary-400 to-tertiary-400 opacity-25 blur-lg transition-opacity duration-500 group-hover:opacity-40"
 			></div>
-			<div
-				class="relative rounded-full bg-white/10 p-8 shadow-2xl ring-1 ring-white/20 backdrop-blur-sm transition-all duration-500 group-hover:scale-105 group-hover:ring-white/30"
-			>
+			<div class="relative p-8">
 				<img
 					src="/img/logo-round-256.webp"
 					alt="Gesichert Demokratisch Münden"
@@ -143,7 +141,7 @@
 		<div class="flex flex-col gap-6 sm:flex-row">
 			<!-- Email Button -->
 			<a
-				href="mailto:info@gesichertdemokratisch-muenden.de"
+				href="mailto:wirsind@gesichertdemokratisch-muenden.de"
 				class="group relative inline-block overflow-hidden rounded-full border border-slate-700/50 bg-slate-900/80 px-8 py-4 font-medium text-white backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:border-slate-600 hover:bg-slate-800/90 hover:shadow-xl"
 			>
 				<div
