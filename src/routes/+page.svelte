@@ -174,4 +174,14 @@
 			</a>
 		</div>
 	</div>
+
+	<!-- Legal Link -->
+	<div class="absolute bottom-4 right-4">
+		<a 
+			href="/legal" 
+			class="text-white/60 hover:text-white/90 text-sm transition-colors duration-200"
+		>
+			Impressum & Datenschutz
+		</a>
+	</div>
 </div>
