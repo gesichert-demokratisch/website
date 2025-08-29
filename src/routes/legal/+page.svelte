@@ -130,6 +130,7 @@
 							<h4 class="text-sm sm:text-base font-medium mb-2 text-white/90 break-words">Server-Log-Dateien</h4>
 							<p class="text-sm leading-relaxed">
 								Das Hosting dieser Website wird durch <a href="https://xenorio.xyz" target="_blank">Xenorio Industries</a> bereitgestellt. 
+								DNS-Services werden durch <a href="https://www.cloudflare.com" target="_blank">Cloudflare</a> zur Verfügung gestellt.
 								Es werden keine Server-Log-Dateien erstellt oder gespeichert. Zugriffsdaten wie IP-Adressen, 
 								Browserinformationen oder Referrer-URLs werden nicht protokolliert oder ausgewertet.
 							</p>
