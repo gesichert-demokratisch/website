@@ -75,8 +75,8 @@
 
 	// Lazy load particles after initial page render
 	onMount(async () => {
-		// Wait a bit for the page to settle
-		setTimeout(async () => {
+		// Use requestIdleCallback or fallback to ensure particles don't block rendering
+		const loadParticles = async () => {
 			try {
 				const [{ default: Particles, particlesInit }, { loadSlim }] = await Promise.all([
 					import('@tsparticles/svelte'),
@@ -93,7 +93,15 @@
 			} catch (error) {
 				console.log('Failed to load particles:', error);
 			}
-		}, 100);
+		};
+
+		// Use requestIdleCallback to load particles when browser is idle
+		if ('requestIdleCallback' in window) {
+			requestIdleCallback(loadParticles);
+		} else {
+			// Fallback for browsers without requestIdleCallback
+			setTimeout(loadParticles, 300);
+		}
 	});
 </script>
 
@@ -119,12 +127,14 @@
 			>
 				<img
 					src="/img/logo-round-256.webp"
-					alt="Logo"
+					alt="Gesichert Demokratisch Münden"
+					aria-label="Gesichert Demokratisch Münden logo"
 					class="h-48 w-48 drop-shadow-2xl md:h-64 md:w-64"
 					loading="eager"
 					fetchpriority="high"
 					width="256"
 					height="256"
+					style="font-size: 0;"
 				/>
 			</div>
 		</div>
