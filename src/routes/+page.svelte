@@ -44,7 +44,7 @@
 				enable: true,
 				outModes: 'out' as const,
 				random: true,
-				speed: 0.1,
+				speed: 0.75,
 				straight: false
 			},
 			number: {
