@@ -124,7 +124,7 @@
 		<!-- Logo -->
 		<div class="group relative">
 			<div
-				class="absolute -inset-8 rounded-full bg-purple-400 opacity-30 blur-2xl transition-opacity duration-500 group-hover:opacity-60"
+				class="absolute -inset-8 rounded-full bg-purple-400 opacity-50 blur-2xl transition-opacity duration-500 group-hover:opacity-80"
 			></div>
 			<div class="relative p-8">
 				<img
