@@ -37,3 +37,5 @@ yarn preview
 ## License
 
 This project is licensed under the GNU Affero General Public License v3.0 (AGPLv3). See the [LICENSE](LICENSE) file for details.
+
+**Note:** The "Gesichert Demokratisch Münden" logo is not included under this license. It was created by Barbara Brübach ([www.fettetypen.de](https://www.fettetypen.de)) and all rights are reserved.
