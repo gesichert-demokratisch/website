@@ -162,13 +162,25 @@
 				<!-- Copyright -->
 				<section>
 					<h1 class="text-2xl sm:text-3xl font-bold mb-6 text-white break-words">Copyright</h1>
-					<div class="text-white/80">
-						<p class="text-sm leading-relaxed">
-							Diese Website ist freie Software und steht unter der 
-							<a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank" class="text-blue-300 hover:text-blue-200 underline">AGPLv3-Lizenz</a>. 
-							Der Quellcode ist verfügbar auf 
-							<a href="https://github.com/gesichert-demokratisch/website" target="_blank" class="text-blue-300 hover:text-blue-200 underline">GitHub</a>.
-						</p>
+					<div class="space-y-4 text-white/80">
+						<div>
+							<h3 class="text-base sm:text-lg font-semibold mb-2 break-words">Website-Quellcode</h3>
+							<p class="text-sm leading-relaxed">
+								Diese Website ist freie Software und steht unter der 
+								<a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank" class="text-blue-300 hover:text-blue-200 underline">AGPLv3-Lizenz</a>. 
+								Der Quellcode ist verfügbar auf 
+								<a href="https://github.com/gesichert-demokratisch/website" target="_blank" class="text-blue-300 hover:text-blue-200 underline">GitHub</a>.
+							</p>
+						</div>
+						
+						<div>
+							<h3 class="text-base sm:text-lg font-semibold mb-2 break-words">Logo</h3>
+							<p class="text-sm leading-relaxed">
+								Das "Gesichert Demokratisch Münden"-Logo wurde erstellt von Barbara Brübach 
+								(<a href="https://www.fettetypen.de" target="_blank" class="text-blue-300 hover:text-blue-200 underline">www.fettetypen.de</a>). 
+								Alle Rechte vorbehalten.
+							</p>
+						</div>
 					</div>
 				</section>
 			</div>
