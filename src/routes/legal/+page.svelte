@@ -61,9 +61,9 @@
 					<div class="text-white/90">
 						<p>
 							<strong>Gesichert Demokratisch Münden</strong><br>
-							c/o Konstantin Maenner<br>
-							Thingplatz 7<br>
-							34346 Hann. Münden
+							c/o Marcus Huber<br>
+							Sudermannstraße 9<br>
+							38226 Salzgitter
 						</p>
 					</div>
 
@@ -72,14 +72,14 @@
 						<p>E-Mail: <a href="mailto:wirsind@gesichertdemokratisch-muenden.de" class="text-blue-300 hover:text-blue-200 underline">wirsind@gesichertdemokratisch-muenden.de</a></p>
 					</div>
 
-					<div class="mt-6 text-white/80">
+					<!-- <div class="mt-6 text-white/80">
 						<h3 class="text-base sm:text-lg font-semibold mb-2 break-words">Inhaltlich verantwortlich</h3>
 						<p class="text-sm leading-relaxed mb-4">
 							Marcus Huber<br>
 							Xenorio Industries<br>
 							<a href="https://xenorio.xyz" target="_blank" class="text-blue-300 hover:text-blue-200 underline">https://xenorio.xyz</a>
 						</p>
-					</div>
+					</div> -->
 
 					<div class="mt-6 text-white/80">
 						<h3 class="text-base sm:text-lg font-semibold mb-2 break-words">Haftung für Inhalte</h3>
