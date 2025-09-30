@@ -38,4 +38,8 @@ yarn preview
 
 This project is licensed under the GNU Affero General Public License v3.0 (AGPLv3). See the [LICENSE](LICENSE) file for details.
 
-**Note:** The "Gesichert Demokratisch Münden" logo is not included under this license. It was created by Barbara Brübach ([www.fettetypen.de](https://www.fettetypen.de)) and all rights are reserved.
+The ["Gesichert Demokratisch Münden" logo](static/img/logo-1024x1024.png) was created by Barbara Brübach ([www.fettetypen.de](https://www.fettetypen.de)) and all rights are reserved.
+
+The [Stadtwappen Hann. Münden](static/img/stadtwappen-muenden.png) is in the public domain as an official work under § 5 UrhG. Its use on this website is for illustrative purposes only. There is no organizational or legal connection between "Gesichert Demokratisch Münden" and the City of Hann. Münden.
+
+

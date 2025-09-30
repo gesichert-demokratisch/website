@@ -32,6 +32,7 @@
 	// Altcha widget reference
 	let altchaWidget: any;
 	let altchaSolution: string | null = null;
+	let isAltchaReady = false;
 
 	async function handleSubmit(event: Event) {
 		event.preventDefault();
@@ -45,8 +46,8 @@
 		}
 
 		// Check if altcha solution is available
-		if (!altchaSolution) {
-			showMessage('Bitte warte, bis die Captcha-Verifikation abgeschlossen ist. 🤖', true);
+		if (!altchaSolution || !isAltchaReady) {
+			showMessage('Bitte löse zuerst das Captcha. 🤖', true);
 			return;
 		}
 
@@ -71,6 +72,8 @@
 				// Reset form after successful submission
 				formData = { name: '', email: '', message: '' };
 				altchaWidget?.reset();
+				altchaSolution = null;
+				isAltchaReady = false;
 			} else {
 				showMessage(result.error || 'Ein Fehler ist aufgetreten. 😔', true);
 			}
@@ -109,6 +112,11 @@
 					altchaWidget.addEventListener('verified', (event: any) => {
 						console.log('Altcha verified:', event.detail);
 						altchaSolution = event.detail.payload;
+						isAltchaReady = true;
+					});
+					altchaWidget.addEventListener('reset', () => {
+						altchaSolution = null;
+						isAltchaReady = false;
 					});
 				}
 			}, 1000);
@@ -118,7 +126,7 @@
 
 
 <!-- Contact Section -->
-<div class="rounded-3xl bg-gradient-to-br from-slate-800/80 via-slate-700/80 to-slate-800/80 backdrop-blur-sm border border-slate-600/50 p-8 md:p-12">
+<div class="rounded-3xl bg-gradient-to-br from-slate-800/80 via-slate-700/80 to-slate-800/80 backdrop-blur-sm border border-slate-600/50 p-8 md:p-12" data-aos="fade-up">
 	<div class="text-center mb-8">
 		<div class="inline-flex h-16 w-16 items-center justify-center rounded-full bg-blue-500/20 border border-blue-400/30 mb-4">
 			<i class="fas fa-envelope text-2xl text-blue-300"></i>
@@ -193,31 +201,35 @@
 				</div>
 			{/if}
 
+			<!-- Captcha Section -->
+			<div class="flex items-center justify-center">
+				<altcha-widget
+					bind:this={altchaWidget}
+					challengeurl="/api/challenge"
+					language="de"
+				></altcha-widget>
+			</div>
+
 			<!-- Submit Button -->
 			<div class="text-center">
 				<button
 					id="submit-button"
 					type="submit"
-					disabled={isSubmitting}
-					class="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 disabled:from-blue-800 disabled:to-purple-800 text-white font-medium rounded-lg transition-all duration-300 disabled:opacity-50 hover:scale-105 hover:shadow-xl"
+					disabled={isSubmitting || !isAltchaReady}
+					class="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r transition-all duration-300 text-white font-medium rounded-lg {isAltchaReady && !isSubmitting ? 'from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 hover:scale-105 hover:shadow-xl' : 'from-gray-600 to-gray-700 cursor-not-allowed opacity-60'}"
 				>
 					{#if isSubmitting}
 						<i class="fas fa-spinner fa-spin mr-2"></i>
 						Nachricht wird gesendet...
+					{:else if !isAltchaReady}
+						<i class="fas fa-lock mr-2"></i>
+						Löse zuerst das captcha!
 					{:else}
 						<i class="fas fa-paper-plane mr-2"></i>
 						Nachricht senden
 					{/if}
 				</button>
 			</div>
-
-			<!-- Altcha Widget (Floating) -->
-			<altcha-widget
-				bind:this={altchaWidget}
-				challengeurl="/api/challenge"
-				floating
-				language="de"
-			></altcha-widget>
 		</form>
 	</div>
 </div>
@@ -235,43 +247,22 @@
 		--altcha-max-width: 100%;
 	}
 
-	:global(.altcha-floating) {
-		--altcha-color-base: #1e293b !important;
-		--altcha-color-text: #f8fafc !important;
-		--altcha-color-border: #475569 !important;
-		--altcha-color-border-focus: #3b82f6 !important;
-		--altcha-color-accent: #3b82f6 !important;
-		--altcha-color-footer-bg: #0f172a !important;
-		--altcha-color-footer-text: #cbd5e1 !important;
-		--altcha-border-radius: 8px !important;
-		--altcha-max-width: 280px !important;
-		z-index: 9999 !important;
-	}
-
-	:global(.altcha-floating .altcha-checkbox) {
+	:global(.altcha-checkbox) {
 		background-color: #1e293b !important;
 		border-color: #475569 !important;
 		color: #f8fafc !important;
 	}
 
-	:global(.altcha-floating .altcha-label) {
+	:global(.altcha-label) {
 		color: #f8fafc !important;
 	}
 
-	:global(.altcha-floating .altcha-footer) {
+	:global(.altcha-footer) {
 		background-color: #0f172a !important;
 		color: #cbd5e1 !important;
 	}
 
-	:global(.altcha-floating .altcha-footer a) {
+	:global(.altcha-footer a) {
 		color: #3b82f6 !important;
-	}
-
-	:global(altcha-widget) {
-		display: none;
-	}
-
-	:global(altcha-widget.altcha-floating) {
-		display: block !important;
 	}
 </style>

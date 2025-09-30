@@ -16,9 +16,19 @@
 -->
 
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import '../app.css';
+	import AOS from 'aos';
 
 	let { children } = $props();
+
+	onMount(() => {
+		AOS.init({
+			duration: 800,
+			once: true,
+			offset: 100
+		});
+	});
 </script>
 
 <svelte:head>

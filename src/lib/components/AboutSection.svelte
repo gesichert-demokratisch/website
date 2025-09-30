@@ -23,7 +23,7 @@
 	<div class="relative z-10 px-6 py-24 lg:px-8">
 		<div class="mx-auto max-w-6xl">
 			<!-- Header -->
-			<div class="text-center mb-20">
+			<div class="text-center mb-20" data-aos="fade-up">
 				<h2 class="text-4xl font-bold text-white sm:text-5xl mb-6">
 					Warum wir hier sind
 				</h2>
@@ -35,7 +35,7 @@
 
 			<!-- Core Mission -->
 			<div class="mb-20">
-				<div class="rounded-3xl bg-gradient-to-r from-yellow-500/20 via-orange-500/20 to-red-500/20 backdrop-blur-sm border border-yellow-400/30 p-8 md:p-12">
+				<div class="rounded-3xl bg-gradient-to-r from-yellow-500/20 via-orange-500/20 to-red-500/20 backdrop-blur-sm border border-yellow-400/30 p-8 md:p-12" data-aos="fade-up" data-aos-delay="100">
 					<div class="flex flex-col md:flex-row items-start space-y-6 md:space-y-0 md:space-x-8">
 						<div class="flex-shrink-0">
 							<div class="flex h-20 w-20 items-center justify-center rounded-full bg-yellow-400/30 border border-yellow-400/50">
@@ -59,9 +59,9 @@
 
 			<!-- What We Stand For -->
 			<div class="mb-20">
-				<h3 class="text-3xl font-bold text-white text-center mb-12">Wofür wir stehen</h3>
+				<h3 class="text-3xl font-bold text-white text-center mb-12" data-aos="fade-up">Wofür wir stehen</h3>
 				<div class="grid md:grid-cols-2 gap-8">
-					<div class="group rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 p-6 hover:bg-white/10 transition-all duration-300">
+					<div class="group rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 p-6 hover:bg-white/10 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
 						<div class="flex items-center mb-4">
 							<div class="flex h-14 w-14 items-center justify-center rounded-full bg-blue-500/20 border border-blue-400/30 mr-4 group-hover:scale-110 transition-transform duration-300">
 								<i class="fas fa-users text-xl text-blue-300"></i>
@@ -75,7 +75,7 @@
 						</p>
 					</div>
 
-					<div class="group rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 p-6 hover:bg-white/10 transition-all duration-300">
+					<div class="group rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 p-6 hover:bg-white/10 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
 						<div class="flex items-center mb-4">
 							<div class="flex h-14 w-14 items-center justify-center rounded-full bg-green-500/20 border border-green-400/30 mr-4 group-hover:scale-110 transition-transform duration-300">
 								<i class="fas fa-hand-holding-heart text-xl text-green-300"></i>
@@ -88,7 +88,7 @@
 						</p>
 					</div>
 
-					<div class="group rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 p-6 hover:bg-white/10 transition-all duration-300">
+					<div class="group rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 p-6 hover:bg-white/10 transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
 						<div class="flex items-center mb-4">
 							<div class="flex h-14 w-14 items-center justify-center rounded-full bg-purple-500/20 border border-purple-400/30 mr-4 group-hover:scale-110 transition-transform duration-300">
 								<i class="fas fa-memory text-xl text-purple-300"></i>
@@ -102,7 +102,7 @@
 						</p>
 					</div>
 
-					<div class="group rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 p-6 hover:bg-white/10 transition-all duration-300">
+					<div class="group rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 p-6 hover:bg-white/10 transition-all duration-300" data-aos="fade-up" data-aos-delay="400">
 						<div class="flex items-center mb-4">
 							<div class="flex h-14 w-14 items-center justify-center rounded-full bg-red-500/20 border border-red-400/30 mr-4 group-hover:scale-110 transition-transform duration-300">
 								<i class="fas fa-shield-alt text-xl text-red-300"></i>
@@ -120,11 +120,11 @@
 
 			<!-- What We Do -->
 			<div class="mb-20">
-				<div class="rounded-3xl bg-gradient-to-r from-slate-800/50 to-slate-700/50 backdrop-blur-sm border border-slate-600/30 p-8 md:p-12">
+				<div class="rounded-3xl bg-gradient-to-r from-slate-800/50 to-slate-700/50 backdrop-blur-sm border border-slate-600/30 p-8 md:p-12" data-aos="fade-up">
 					<h3 class="text-3xl font-bold text-white mb-12 text-center">Was wir tun</h3>
 
 					<div class="grid md:grid-cols-3 gap-8">
-						<div class="text-center group">
+						<div class="text-center group" data-aos="zoom-in" data-aos-delay="100">
 							<div class="flex h-20 w-20 items-center justify-center rounded-full bg-orange-500/20 border border-orange-400/30 mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
 								<i class="fas fa-bullhorn text-2xl text-orange-300"></i>
 							</div>
@@ -135,7 +135,7 @@
 							</p>
 						</div>
 
-						<div class="text-center group">
+						<div class="text-center group" data-aos="zoom-in" data-aos-delay="200">
 							<div class="flex h-20 w-20 items-center justify-center rounded-full bg-cyan-500/20 border border-cyan-400/30 mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
 								<i class="fas fa-lightbulb text-2xl text-cyan-300"></i>
 							</div>
@@ -146,7 +146,7 @@
 							</p>
 						</div>
 
-						<div class="text-center group">
+						<div class="text-center group" data-aos="zoom-in" data-aos-delay="300">
 							<div class="flex h-20 w-20 items-center justify-center rounded-full bg-pink-500/20 border border-pink-400/30 mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
 								<i class="fas fa-share-alt text-2xl text-pink-300"></i>
 							</div>
@@ -162,7 +162,16 @@
 
 			<!-- Call to Action -->
 			<div class="text-center mb-20">
-				<div class="rounded-3xl bg-gradient-to-r from-primary-600/30 to-secondary-600/30 backdrop-blur-sm border border-primary-400/30 p-8 md:p-12">
+				<div class="rounded-3xl bg-gradient-to-r from-primary-600/30 to-secondary-600/30 backdrop-blur-sm border border-primary-400/30 p-8 md:p-12 relative overflow-hidden" data-aos="fade-up">
+					<!-- Coat of Arms -->
+					<div class="absolute right-4 top-1/2 transform -translate-y-1/2 hidden lg:block">
+						<img
+							src="/img/stadtwappen-muenden.png"
+							alt="Stadtwappen Hann. Münden"
+							class="w-48 h-48 opacity-80 hover:opacity-100 transition-opacity duration-300"
+						/>
+					</div>
+
 					<h3 class="text-3xl font-bold text-white mb-6">
 						Der Mündener Stadtgesellschaft Mut machen
 					</h3>
@@ -174,7 +183,7 @@
 			</div>
 
 			<!-- Contact Section -->
-			<!-- <ContactForm /> -->
+			<ContactForm />
 		</div>
 	</div>
 </section>

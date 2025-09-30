@@ -120,20 +120,21 @@ export const POST: RequestHandler = async ({ request, getClientAddress }) => {
 		// Rate limiting only after all validation passes
 		if (!rateLimit('contact', request, getClientAddress, 300000, 3)) {
 			return json({
-				error: 'Whoa! Du warst heute schon ziemlich aktiv. 😅 Lass uns eine kleine Pause machen, bevor du wieder schreibst!'
+				error: 'Whoa! Lass uns eine kleine Pause machen, bevor du wieder schreibst!'
 			}, { status: 429 });
 		}
 
 		// Queue spam analysis and send email in background
+		console.log(`[CONTACT] 📝 Form submitted by ${name} <${email}>`);
 		queueSpamAnalysis(message, email, name).then(analysis => {
 			if (!analysis.isSpam) {
-				// Send email only if not spam
+				console.log(`[CONTACT] ✅ Sending email to ${CONTACT_EMAIL}`);
 				sendContactEmail(name, email, message);
 			} else {
-				console.log(`Spam message dropped from ${name} <${email}>: ${analysis.reason}`);
+				console.warn(`[CONTACT] 🚫 Message blocked - not sending email`);
 			}
 		}).catch(error => {
-			console.error('Failed to analyze spam, sending email anyway:', error);
+			console.error('[CONTACT] ❌ Spam analysis failed, sending email anyway:', error);
 			// If spam analysis fails, send email anyway
 			sendContactEmail(name, email, message);
 		});
@@ -141,13 +142,13 @@ export const POST: RequestHandler = async ({ request, getClientAddress }) => {
 		// Always return success to user
 		return json({
 			success: true,
-			message: 'Deine Nachricht wurde erfolgreich gesendet! 🎉 Wir melden uns so schnell wie möglich bei dir.'
+			message: 'Deine Nachricht wurde erfolgreich gesendet! 🎉'
 		});
 
 	} catch (error) {
 		console.error('Error processing contact form:', error);
 		return json({
-			error: 'Ups! Da ist leider etwas schiefgelaufen. 😔 Bitte versuch es in ein paar Minuten nochmal oder schreib uns direkt eine E-Mail.'
+			error: 'Ups! Da ist leider etwas schiefgelaufen. Bitte versuch es in ein paar Minuten nochmal oder schreib uns direkt eine E-Mail.'
 		}, { status: 500 });
 	}
 };

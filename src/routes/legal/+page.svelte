@@ -17,9 +17,9 @@
 
 <script lang="ts">
 	import { onMount } from 'svelte';
-	
+
 	let currentDate = '';
-	
+
 	onMount(() => {
 		currentDate = new Date().toLocaleDateString('de-DE', {
 			year: 'numeric',
@@ -33,43 +33,58 @@
 	<title>Impressum & Datenschutz - Gesichert Demokratisch Münden</title>
 </svelte:head>
 
-<div class="min-h-screen bg-gradient-to-br from-primary-500 via-secondary-500 to-tertiary-600 text-white">
+<div
+	class="min-h-screen bg-gradient-to-br from-primary-500 via-secondary-500 to-tertiary-600 text-white"
+>
 	<div class="container mx-auto max-w-4xl px-4 py-16">
 		<!-- Back Navigation -->
 		<div class="mb-8">
-			<a 
-				href="/" 
-				class="inline-flex items-center space-x-2 text-white/80 hover:text-white transition-colors duration-200"
+			<a
+				href="/"
+				class="inline-flex items-center space-x-2 text-white/80 transition-colors duration-200 hover:text-white"
 			>
 				<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						d="M15 19l-7-7 7-7"
+					/>
 				</svg>
 				<span>Zurück zur Startseite</span>
 			</a>
 		</div>
 
 		<!-- Content -->
-		<div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 sm:p-8 md:p-12 shadow-xl">
-			<div class="prose prose-invert max-w-none text-center md:text-left break-words overflow-wrap-anywhere">
-				<p class="text-sm text-white/60 mb-8">Stand: {currentDate}</p>
+		<div class="rounded-lg bg-white/10 p-4 shadow-xl backdrop-blur-sm sm:p-8 md:p-12">
+			<div
+				class="overflow-wrap-anywhere prose max-w-none text-center break-words prose-invert md:text-left"
+			>
+				<p class="mb-8 text-sm text-white/60">Stand: {currentDate}</p>
 
 				<!-- Impressum -->
 				<section class="mb-12">
-					<h1 class="text-2xl sm:text-3xl font-bold mb-6 text-white break-words">Impressum</h1>
-					<p class="text-sm text-white/80 mb-6">Angaben gemäß § 5 DDG</p>
-					
+					<h1 class="mb-6 text-2xl font-bold break-words text-white sm:text-3xl">Impressum</h1>
+					<p class="mb-6 text-sm text-white/80">Angaben gemäß § 5 DDG</p>
+
 					<div class="text-white/90">
 						<p>
-							<strong>Gesichert Demokratisch Münden</strong><br>
-							c/o Marcus Huber<br>
-							Sudermannstraße 9<br>
+							<strong>Gesichert Demokratisch Münden</strong><br />
+							c/o Marcus Huber<br />
+							Sudermannstraße 9<br />
 							38226 Salzgitter
 						</p>
 					</div>
 
 					<div class="mt-6 space-y-2 text-white/90">
 						<p><strong>Kontakt:</strong></p>
-						<p>E-Mail: <a href="mailto:wirsind@gesichertdemokratisch-muenden.de" class="text-blue-300 hover:text-blue-200 underline">wirsind@gesichertdemokratisch-muenden.de</a></p>
+						<p>
+							E-Mail: <a
+								href="mailto:wirsind@gesichertdemokratisch-muenden.de"
+								class="text-blue-300 underline hover:text-blue-200"
+								>wirsind@gesichertdemokratisch-muenden.de</a
+							>
+						</p>
 					</div>
 
 					<!-- <div class="mt-6 text-white/80">
@@ -82,103 +97,147 @@
 					</div> -->
 
 					<div class="mt-6 text-white/80">
-						<h3 class="text-base sm:text-lg font-semibold mb-2 break-words">Haftung für Inhalte</h3>
+						<h3 class="mb-2 text-base font-semibold break-words sm:text-lg">Haftung für Inhalte</h3>
 						<p class="text-sm leading-relaxed">
-							Für alle eigenen Inhalte auf diesen Seiten ist die oben genannte Person nach den allgemeinen 
-							Gesetzen verantwortlich. Für fremde Inhalte gelten die Haftungsregeln der EU-Verordnung über digitale 
-							Dienste (Digital Services Act) in Verbindung mit § 7 DDG. Wir sind nicht verpflichtet, übermittelte oder 
-							gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine 
-							rechtswidrige Tätigkeit hinweisen.
+							Für alle eigenen Inhalte auf diesen Seiten ist die oben genannte Person nach den
+							allgemeinen Gesetzen verantwortlich. Für fremde Inhalte gelten die Haftungsregeln der
+							EU-Verordnung über digitale Dienste (Digital Services Act) in Verbindung mit § 7 DDG.
+							Wir sind nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu
+							überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit
+							hinweisen.
 						</p>
 					</div>
 
 					<div class="mt-6 text-white/80">
-						<h3 class="text-base sm:text-lg font-semibold mb-2 break-words">Haftung für Links</h3>
+						<h3 class="mb-2 text-base font-semibold break-words sm:text-lg">Haftung für Links</h3>
 						<p class="text-sm leading-relaxed">
-							Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. 
-							Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten 
-							Seiten sind stets die jeweiligen Webseitenbetreibenden verantwortlich.
+							Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen
+							Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr
+							übernehmen. Für die Inhalte der verlinkten Seiten sind stets die jeweiligen
+							Webseitenbetreibenden verantwortlich.
 						</p>
 					</div>
 				</section>
 
 				<!-- Datenschutzerklärung -->
 				<section class="mb-12">
-					<h1 class="text-2xl sm:text-3xl font-bold mb-6 text-white break-words">Datenschutzerklärung</h1>
+					<h1 class="mb-6 text-2xl font-bold break-words text-white sm:text-3xl">
+						Datenschutzerklärung
+					</h1>
 
 					<div class="space-y-6 text-white/80">
 						<div>
-							<h3 class="text-base sm:text-lg font-semibold mb-2 text-white/90 break-words">1. Datenschutz auf einen Blick</h3>
+							<h3 class="mb-2 text-base font-semibold break-words text-white/90 sm:text-lg">
+								1. Datenschutz auf einen Blick
+							</h3>
 							<p class="text-sm leading-relaxed">
-								Diese Website sammelt keine personenbezogenen Daten. Es werden keine Cookies gesetzt, 
-								keine Tracking-Tools verwendet und keine Analyse-Software eingesetzt.
+								Diese Website sammelt keine personenbezogenen Daten. Es werden keine Cookies
+								gesetzt, keine Tracking-Tools verwendet und keine Analyse-Software eingesetzt.
 							</p>
 						</div>
 
 						<div>
-							<h3 class="text-base sm:text-lg font-semibold mb-2 text-white/90 break-words">2. Allgemeine Hinweise und Pflichtinformationen</h3>
-							<h4 class="text-sm sm:text-base font-medium mb-2 text-white/90 break-words">Datenschutz</h4>
+							<h3 class="mb-2 text-base font-semibold break-words text-white/90 sm:text-lg">
+								2. Allgemeine Hinweise und Pflichtinformationen
+							</h3>
+							<h4 class="mb-2 text-sm font-medium break-words text-white/90 sm:text-base">
+								Datenschutz
+							</h4>
 							<p class="text-sm leading-relaxed">
-								Der Schutz Ihrer persönlichen Daten ist uns ein besonderes Anliegen. Wir behandeln Ihre 
-								personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften 
-								sowie dieser Datenschutzerklärung.
+								Der Schutz Ihrer persönlichen Daten ist uns ein besonderes Anliegen. Wir behandeln
+								Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen
+								Datenschutzvorschriften sowie dieser Datenschutzerklärung.
 							</p>
 						</div>
 
 						<div>
-							<h3 class="text-base sm:text-lg font-semibold mb-2 text-white/90 break-words">3. Datenerfassung auf unserer Website</h3>
-							<h4 class="text-sm sm:text-base font-medium mb-2 text-white/90 break-words">Server-Log-Dateien</h4>
+							<h3 class="mb-2 text-base font-semibold break-words text-white/90 sm:text-lg">
+								3. Datenerfassung auf unserer Website
+							</h3>
+							<h4 class="mb-2 text-sm font-medium break-words text-white/90 sm:text-base">
+								Server-Log-Dateien
+							</h4>
 							<p class="text-sm leading-relaxed">
-								Das Hosting dieser Website wird durch <a href="https://xenorio.xyz" target="_blank">Xenorio Industries</a> bereitgestellt. 
-								DNS-Services werden durch <a href="https://www.cloudflare.com" target="_blank">Cloudflare</a> zur Verfügung gestellt.
-								Es werden keine Server-Log-Dateien erstellt oder gespeichert. Zugriffsdaten wie IP-Adressen, 
+								Das Hosting dieser Website wird durch <a href="https://xenorio.xyz" target="_blank"
+									>Xenorio Industries</a
+								>
+								bereitgestellt. DNS-Services werden durch
+								<a href="https://www.cloudflare.com" target="_blank">Cloudflare</a> zur Verfügung gestellt.
+								Es werden keine Server-Log-Dateien erstellt oder gespeichert. Zugriffsdaten wie IP-Adressen,
 								Browserinformationen oder Referrer-URLs werden nicht protokolliert oder ausgewertet.
 							</p>
 						</div>
 
 						<div>
-							<h3 class="text-base sm:text-lg font-semibold mb-2 text-white/90 break-words">4. Ihre Rechte</h3>
+							<h3 class="mb-2 text-base font-semibold break-words text-white/90 sm:text-lg">
+								4. Ihre Rechte
+							</h3>
 							<p class="text-sm leading-relaxed">
-								Sie haben jederzeit das Recht unentgeltlich Auskunft über Herkunft, Empfängerschaft und Zweck 
-								Ihrer gespeicherten personenbezogenen Daten zu erhalten. Da wir jedoch keine personenbezogenen 
-								Daten sammeln oder speichern, gibt es in der Regel keine Daten, über die wir Auskunft 
-								erteilen könnten.
+								Sie haben jederzeit das Recht unentgeltlich Auskunft über Herkunft, Empfängerschaft
+								und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Da wir jedoch
+								keine personenbezogenen Daten sammeln oder speichern, gibt es in der Regel keine
+								Daten, über die wir Auskunft erteilen könnten.
 							</p>
 						</div>
 
 						<div>
-							<h3 class="text-base sm:text-lg font-semibold mb-2 text-white/90 break-words">5. Kontakt</h3>
+							<h3 class="mb-2 text-base font-semibold break-words text-white/90 sm:text-lg">
+								5. Kontakt
+							</h3>
 							<p class="text-sm leading-relaxed">
-								Bei Fragen zum Datenschutz wenden Sie sich bitte an: 
-								<a href="mailto:wirsind@gesichertdemokratisch-muenden.de" class="text-blue-300 hover:text-blue-200 underline">
+								Bei Fragen zum Datenschutz wenden Sie sich bitte an:
+								<a
+									href="mailto:wirsind@gesichertdemokratisch-muenden.de"
+									class="text-blue-300 underline hover:text-blue-200"
+								>
 									wirsind@gesichertdemokratisch-muenden.de
 								</a>
 							</p>
 						</div>
-
 					</div>
 				</section>
 
 				<!-- Copyright -->
 				<section>
-					<h1 class="text-2xl sm:text-3xl font-bold mb-6 text-white break-words">Copyright</h1>
+					<h1 class="mb-6 text-2xl font-bold break-words text-white sm:text-3xl">Copyright</h1>
 					<div class="space-y-4 text-white/80">
 						<div>
-							<h3 class="text-base sm:text-lg font-semibold mb-2 break-words">Website-Quellcode</h3>
+							<h3 class="mb-2 text-base font-semibold break-words sm:text-lg">Website-Quellcode</h3>
 							<p class="text-sm leading-relaxed">
-								Diese Website ist freie Software und steht unter der 
-								<a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank" class="text-blue-300 hover:text-blue-200 underline">AGPLv3-Lizenz</a>. 
-								Der Quellcode ist verfügbar auf 
-								<a href="https://github.com/gesichert-demokratisch/website" target="_blank" class="text-blue-300 hover:text-blue-200 underline">GitHub</a>.
+								Diese Website ist freie Software und steht unter der
+								<a
+									href="https://www.gnu.org/licenses/agpl-3.0.html"
+									target="_blank"
+									class="text-blue-300 underline hover:text-blue-200">AGPLv3-Lizenz</a
+								>. Der Quellcode ist verfügbar auf
+								<a
+									href="https://github.com/gesichert-demokratisch/website"
+									target="_blank"
+									class="text-blue-300 underline hover:text-blue-200">GitHub</a
+								>.
 							</p>
 						</div>
-						
+
 						<div>
-							<h3 class="text-base sm:text-lg font-semibold mb-2 break-words">Logo</h3>
+							<h3 class="mb-2 text-base font-semibold break-words sm:text-lg">Logo</h3>
 							<p class="text-sm leading-relaxed">
-								Das "Gesichert Demokratisch Münden"-Logo wurde erstellt von Barbara Brübach 
-								(<a href="https://www.fettetypen.de" target="_blank" class="text-blue-300 hover:text-blue-200 underline">www.fettetypen.de</a>). 
-								Alle Rechte vorbehalten.
+								Das "Gesichert Demokratisch Münden"-Logo wurde erstellt von Barbara Brübach (<a
+									href="https://www.fettetypen.de"
+									target="_blank"
+									class="text-blue-300 underline hover:text-blue-200">www.fettetypen.de</a
+								>). Alle Rechte vorbehalten.
+							</p>
+						</div>
+
+						<div>
+							<h3 class="mb-2 text-base font-semibold break-words sm:text-lg">
+								Stadtwappen Hann Münden
+							</h3>
+							<p class="text-sm leading-relaxed">
+								Das Stadtwappen Hann. Münden ist als amtliches Werk nach § 5 UrhG gemeinfrei. Die
+								Nutzung auf dieser Webseite erfolgt ausschließlich zu illustrativen Zwecken. Es
+								besteht keinerlei organisatorische oder rechtliche Verbindung zwischen „Gesichert
+								Demokratisch Münden“ und der Stadt Hann. Münden.
 							</p>
 						</div>
 					</div>

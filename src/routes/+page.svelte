@@ -22,6 +22,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import AboutSection from '$lib/components/AboutSection.svelte';
+	import RightsSection from '$lib/components/RightsSection.svelte';
 
 	let ParticlesComponent: any = null;
 	let particlesLoaded = false;
@@ -87,12 +88,12 @@
 					import('@tsparticles/svelte'),
 					import('@tsparticles/slim')
 				]);
-				
+
 				// Initialize particles engine
 				await particlesInit(async (engine) => {
 					await loadSlim(engine);
 				});
-				
+
 				ParticlesComponent = Particles;
 				particlesLoaded = true;
 			} catch (error) {
@@ -123,7 +124,7 @@
 	<!-- Main content -->
 	<div class="relative z-10 flex flex-col items-center space-y-12">
 		<!-- Logo -->
-		<div class="group relative">
+		<div class="group relative" data-aos="fade-down">
 			<div
 				class="absolute -inset-8 rounded-full bg-purple-400 opacity-50 blur-2xl transition-opacity duration-500 group-hover:opacity-80"
 			></div>
@@ -143,7 +144,7 @@
 		</div>
 
 		<!-- Fancy buttons -->
-		<div class="flex flex-col gap-6 sm:flex-row">
+		<div class="flex flex-col gap-6 sm:flex-row" data-aos="fade-up" data-aos-delay="200">
 			<!-- Email Button -->
 			<a
 				href="mailto:wirsind@gesichertdemokratisch-muenden.de"
@@ -177,23 +178,33 @@
 					<span class="text-lg">Instagram</span>
 				</div>
 			</a>
-
-			<!-- Scroll to About Button -->
-			<button
-				on:click={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
-				class="group relative inline-block overflow-hidden rounded-full border border-slate-700/50 bg-slate-900/80 px-8 py-4 font-medium text-white backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:border-slate-600 hover:bg-slate-800/90 hover:shadow-xl"
-			>
-				<div
-					class="absolute inset-0 bg-gradient-to-r from-purple-400/10 to-pink-400/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-				></div>
-				<div class="relative flex items-center space-x-3">
-					<div class="text-2xl text-purple-400">
-						<i class="fas fa-arrow-down"></i>
-					</div>
-					<span class="text-lg">Mehr erfahren</span>
-				</div>
-			</button>
 		</div>
+	</div>
+
+	<!-- Scroll to About Button - Bottom Center -->
+	<div class="absolute bottom-16 sm:bottom-8 left-1/2 transform -translate-x-1/2">
+		<button
+			onclick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
+			onmouseenter={(e) => {
+				e.currentTarget.classList.add('animate__animated', 'animate__tada');
+			}}
+			onmouseleave={(e) => {
+				e.currentTarget.classList.remove('animate__animated', 'animate__tada');
+			}}
+			class="group relative inline-block overflow-hidden rounded-full border border-slate-700/50 bg-slate-900/80 px-4 py-2 sm:px-8 sm:py-4 font-medium text-white backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:border-slate-600 hover:bg-slate-800/90 hover:shadow-xl"
+			data-aos="fade-up"
+			data-aos-delay="400"
+		>
+			<div
+				class="absolute inset-0 bg-gradient-to-r from-purple-400/10 to-pink-400/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+			></div>
+			<div class="relative flex items-center space-x-2 sm:space-x-3">
+				<div class="text-lg sm:text-2xl text-purple-400">
+					<i class="fas fa-arrow-down"></i>
+				</div>
+				<span class="text-base sm:text-lg">Mehr erfahren</span>
+			</div>
+		</button>
 	</div>
 
 	<!-- Legal Link -->
@@ -208,3 +219,4 @@
 </div>
 
 <AboutSection />
+<RightsSection />

@@ -61,7 +61,7 @@ async function initializeSpamDetector() {
 		console.log('Loading spam detection model...');
 		classifier = await pipeline(
 			'text-classification',
-			'Xenova/distilbert-base-uncased-finetuned-sst-2-english'
+			'Xenova/bert-base-multilingual-uncased-sentiment'
 		);
 		console.log('Spam detection model loaded successfully');
 
@@ -95,22 +95,30 @@ async function processQueue() {
 				const results = await detector(fullText);
 
 				const spamResult = Array.isArray(results) ? results[0] : results;
-				const isSpamLabel = spamResult.label === 'TOXIC' || spamResult.label === 'SPAM';
 				const confidence = spamResult.score;
-				const isSpam = isSpamLabel && confidence > 0.7;
+
+				// For star rating models: block 1-star reviews with high confidence
+				// For sentiment models: block NEGATIVE with high confidence
+				const isSpam = (spamResult.label === '1 star' || spamResult.label === 'NEGATIVE') && confidence > 0.8;
 
 				const analysis: SpamAnalysis = {
 					isSpam,
 					confidence,
 					reason: isSpam
-						? `AI detected ${spamResult.label.toLowerCase()} content (${Math.round(confidence * 100)}% confidence)`
-						: 'Content appears clean',
-					toxicityScore: isSpamLabel ? confidence : 1 - confidence
+						? `AI detected highly ${spamResult.label.toLowerCase()} content (${Math.round(confidence * 100)}% confidence)`
+						: 'Content appears acceptable',
+					toxicityScore: (spamResult.label === 'NEGATIVE' || spamResult.label === '1 star') ? confidence : 1 - confidence
 				};
 
 				// Log spam detection for monitoring
 				if (isSpam) {
-					console.warn(`SPAM DETECTED: ${item.name} <${item.email}> - ${analysis.reason}`);
+					console.warn(`[SPAM] 🚫 BLOCKED - ${item.name || 'Anonymous'} <${item.email}>`);
+					console.warn(`[SPAM] Label: ${spamResult.label} | Confidence: ${Math.round(confidence * 100)}%`);
+					console.warn(`[SPAM] Content: "${item.text}"`);
+				} else {
+					console.log(`[SPAM] ✅ APPROVED - ${item.name || 'Anonymous'} <${item.email}>`);
+					console.log(`[SPAM] Label: ${spamResult.label} | Confidence: ${Math.round(confidence * 100)}%`);
+					console.log(`[SPAM] Content: "${item.text}"`);
 				}
 
 				item.resolve(analysis);
