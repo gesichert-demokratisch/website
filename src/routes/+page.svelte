@@ -122,7 +122,7 @@
 	</div>
 
 	<!-- Main content -->
-	<div class="relative z-10 flex flex-col items-center space-y-12 pb-24 sm:pb-0">
+	<div class="relative z-10 flex flex-col items-center space-y-12">
 		<!-- Logo -->
 		<div class="group relative" data-aos="fade-down">
 			<div
@@ -178,11 +178,33 @@
 					<span class="text-lg">Instagram</span>
 				</div>
 			</a>
+
+			<!-- Scroll to About Button - Mobile inline, Desktop absolute -->
+			<button
+				onclick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
+				onmouseenter={(e) => {
+					e.currentTarget.classList.add('animate__animated', 'animate__tada');
+				}}
+				onmouseleave={(e) => {
+					e.currentTarget.classList.remove('animate__animated', 'animate__tada');
+				}}
+				class="animate__animated animate__bounceIn sm:hidden group relative inline-block overflow-hidden rounded-full border border-slate-700/50 bg-slate-900/80 px-4 py-2 font-medium text-white backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:border-slate-600 hover:bg-slate-800/90 hover:shadow-xl"
+			>
+				<div
+					class="absolute inset-0 bg-gradient-to-r from-purple-400/10 to-pink-400/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+				></div>
+				<div class="relative flex items-center space-x-2">
+					<div class="text-lg text-purple-400">
+						<i class="fas fa-arrow-down"></i>
+					</div>
+					<span class="text-base">Mehr erfahren</span>
+				</div>
+			</button>
 		</div>
 	</div>
 
-	<!-- Scroll to About Button - Bottom Center -->
-	<div class="absolute bottom-[max(env(safe-area-inset-bottom),4rem)] sm:bottom-16 left-1/2 transform -translate-x-1/2 z-20 pb-safe">
+	<!-- Scroll to About Button - Desktop Only (absolute positioned) -->
+	<div class="hidden sm:block absolute bottom-16 left-1/2 transform -translate-x-1/2 z-20">
 		<button
 			onclick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
 			onmouseenter={(e) => {
@@ -191,16 +213,16 @@
 			onmouseleave={(e) => {
 				e.currentTarget.classList.remove('animate__animated', 'animate__tada');
 			}}
-			class="animate__animated animate__bounceIn group relative inline-block overflow-hidden rounded-full border border-slate-700/50 bg-slate-900/80 px-4 py-2 sm:px-8 sm:py-4 font-medium text-white backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:border-slate-600 hover:bg-slate-800/90 hover:shadow-xl"
+			class="animate__animated animate__bounceIn group relative inline-block overflow-hidden rounded-full border border-slate-700/50 bg-slate-900/80 px-8 py-4 font-medium text-white backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:border-slate-600 hover:bg-slate-800/90 hover:shadow-xl"
 		>
 			<div
 				class="absolute inset-0 bg-gradient-to-r from-purple-400/10 to-pink-400/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
 			></div>
-			<div class="relative flex items-center space-x-2 sm:space-x-3">
-				<div class="text-lg sm:text-2xl text-purple-400">
+			<div class="relative flex items-center space-x-3">
+				<div class="text-2xl text-purple-400">
 					<i class="fas fa-arrow-down"></i>
 				</div>
-				<span class="text-base sm:text-lg">Mehr erfahren</span>
+				<span class="text-lg">Mehr erfahren</span>
 			</div>
 		</button>
 	</div>
