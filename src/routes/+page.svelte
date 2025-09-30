@@ -122,7 +122,7 @@
 	</div>
 
 	<!-- Main content -->
-	<div class="relative z-10 flex flex-col items-center space-y-12">
+	<div class="relative z-10 flex flex-col items-center space-y-12 pb-24 sm:pb-0">
 		<!-- Logo -->
 		<div class="group relative" data-aos="fade-down">
 			<div
@@ -182,7 +182,7 @@
 	</div>
 
 	<!-- Scroll to About Button - Bottom Center -->
-	<div class="absolute bottom-16 sm:bottom-8 left-1/2 transform -translate-x-1/2">
+	<div class="absolute bottom-[max(env(safe-area-inset-bottom),4rem)] sm:bottom-16 left-1/2 transform -translate-x-1/2 z-20 pb-safe">
 		<button
 			onclick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
 			onmouseenter={(e) => {
