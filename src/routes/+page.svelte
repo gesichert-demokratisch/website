@@ -191,9 +191,7 @@
 			onmouseleave={(e) => {
 				e.currentTarget.classList.remove('animate__animated', 'animate__tada');
 			}}
-			class="group relative inline-block overflow-hidden rounded-full border border-slate-700/50 bg-slate-900/80 px-4 py-2 sm:px-8 sm:py-4 font-medium text-white backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:border-slate-600 hover:bg-slate-800/90 hover:shadow-xl"
-			data-aos="fade-up"
-			data-aos-delay="400"
+			class="animate__animated animate__bounceIn group relative inline-block overflow-hidden rounded-full border border-slate-700/50 bg-slate-900/80 px-4 py-2 sm:px-8 sm:py-4 font-medium text-white backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:border-slate-600 hover:bg-slate-800/90 hover:shadow-xl"
 		>
 			<div
 				class="absolute inset-0 bg-gradient-to-r from-purple-400/10 to-pink-400/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
