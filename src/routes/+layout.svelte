@@ -33,20 +33,33 @@
 
 <svelte:head>
 	<title>Gesichert Demokratisch Münden</title>
+	<meta name="description" content="Netzwerk für Demokratie und Menschenwürde in Hann. Münden. Wir setzen uns ein für Toleranz, gegen rechte Gewalt und für eine gerechte Gesellschaft - unabhängig von Herkunft, Geschlecht oder Glaube." />
+	<meta name="keywords" content="Demokratie, Hann. Münden, Menschenrechte, Zivilcourage, Grundgesetz Artikel 1, gegen rechts, Toleranz, Aktivismus, Geflüchtete, Antifaschismus" />
+	<meta name="author" content="Gesichert Demokratisch Münden" />
+	<meta name="robots" content="index, follow" />
+	<meta name="language" content="de" />
 	<link rel="icon" href="/img/logo-round-192.webp" />
-	
+	<link rel="canonical" href="https://gesichertdemokratisch-muenden.de" />
+
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website" />
-	<meta property="og:title" content="Gesichert Demokratisch Münden" />
-	<meta property="og:image" content="/img/logo-1024x1024.png" />
+	<meta property="og:url" content="https://gesichertdemokratisch-muenden.de" />
+	<meta property="og:site_name" content="Gesichert Demokratisch Münden" />
+	<meta property="og:title" content="Gesichert Demokratisch Münden - Für Demokratie und Menschenwürde" />
+	<meta property="og:description" content="Netzwerk für Demokratie und Menschenwürde in Hann. Münden. Wir setzen uns ein für Toleranz, gegen rechte Gewalt und für eine gerechte Gesellschaft." />
+	<meta property="og:image" content="https://gesichertdemokratisch-muenden.de/img/logo-1024x1024.png" />
 	<meta property="og:image:width" content="1024" />
 	<meta property="og:image:height" content="1024" />
 	<meta property="og:image:type" content="image/png" />
-	
+	<meta property="og:image:alt" content="Gesichert Demokratisch Münden Logo" />
+	<meta property="og:locale" content="de_DE" />
+
 	<!-- Twitter -->
 	<meta name="twitter:card" content="summary" />
-	<meta name="twitter:title" content="Gesichert Demokratisch Münden" />
-	<meta name="twitter:image" content="/img/logo-1024x1024.png" />
+	<meta name="twitter:title" content="Gesichert Demokratisch Münden - Für Demokratie und Menschenwürde" />
+	<meta name="twitter:description" content="Netzwerk für Demokratie und Menschenwürde in Hann. Münden. Wir setzen uns ein für Toleranz und gegen rechte Gewalt." />
+	<meta name="twitter:image" content="https://gesichertdemokratisch-muenden.de/img/logo-1024x1024.png" />
+	<meta name="twitter:image:alt" content="Gesichert Demokratisch Münden Logo" />
 </svelte:head>
 
 <div class="bg-surface-50-900-token text-token min-h-screen">
