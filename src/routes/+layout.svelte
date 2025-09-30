@@ -36,7 +36,6 @@
 	<meta name="description" content="Netzwerk für Demokratie und Menschenwürde in Hann. Münden. Wir setzen uns ein für Toleranz, gegen rechte Gewalt und für eine gerechte Gesellschaft - unabhängig von Herkunft, Geschlecht oder Glaube." />
 	<meta name="keywords" content="Demokratie, Hann. Münden, Menschenrechte, Zivilcourage, Grundgesetz Artikel 1, gegen rechts, Toleranz, Aktivismus, Geflüchtete, Antifaschismus" />
 	<meta name="author" content="Gesichert Demokratisch Münden" />
-	<meta name="robots" content="index, follow" />
 	<meta name="language" content="de" />
 	<link rel="icon" href="/img/logo-round-192.webp" />
 	<link rel="canonical" href="https://gesichertdemokratisch-muenden.de" />
