@@ -21,6 +21,7 @@
 
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import AboutSection from '$lib/components/AboutSection.svelte';
 
 	let ParticlesComponent: any = null;
 	let particlesLoaded = false;
@@ -176,16 +177,34 @@
 					<span class="text-lg">Instagram</span>
 				</div>
 			</a>
+
+			<!-- Scroll to About Button -->
+			<button
+				on:click={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
+				class="group relative inline-block overflow-hidden rounded-full border border-slate-700/50 bg-slate-900/80 px-8 py-4 font-medium text-white backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:border-slate-600 hover:bg-slate-800/90 hover:shadow-xl"
+			>
+				<div
+					class="absolute inset-0 bg-gradient-to-r from-purple-400/10 to-pink-400/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+				></div>
+				<div class="relative flex items-center space-x-3">
+					<div class="text-2xl text-purple-400">
+						<i class="fas fa-arrow-down"></i>
+					</div>
+					<span class="text-lg">Mehr erfahren</span>
+				</div>
+			</button>
 		</div>
 	</div>
 
 	<!-- Legal Link -->
 	<div class="absolute bottom-4 right-4">
-		<a 
-			href="/legal" 
+		<a
+			href="/legal"
 			class="text-white/60 hover:text-white/90 text-sm transition-colors duration-200"
 		>
 			Impressum & Datenschutz
 		</a>
 	</div>
 </div>
+
+<AboutSection />
