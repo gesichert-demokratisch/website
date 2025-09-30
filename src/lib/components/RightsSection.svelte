@@ -82,13 +82,18 @@
 					</div>
 					<h3 class="text-xl font-semibold text-white mb-4">Hate Speech melden</h3>
 					<ul class="text-white/80 space-y-2 mb-4">
-						<li>• Online und offline Hetze melden</li>
-						<li>• Screenshots/Videos hochladen</li>
-						<li>• Anonym oder mit Kontaktdaten</li>
+						<li>• Online-Hasskriminalität melden</li>
+						<li>• Kostenlose Online-Meldung</li>
+						<li>• Strafrechtliche Verfolgung</li>
 					</ul>
-					<a href="https://hessengegenhetze.de/hate-speech-und-extremismus-melden" target="_blank" rel="noopener noreferrer" class="text-sm text-blue-300 font-medium hover:text-blue-200 transition-colors">
-						→ HessenGegenHetze
-					</a>
+					<div class="space-y-2">
+						<a href="https://zhin.de/" target="_blank" rel="noopener noreferrer" class="text-sm text-blue-300 font-medium hover:text-blue-200 transition-colors block">
+							→ ZHIN Niedersachsen
+						</a>
+						<a href="https://hessengegenhetze.de/hate-speech-und-extremismus-melden" target="_blank" rel="noopener noreferrer" class="text-sm text-blue-300 font-medium hover:text-blue-200 transition-colors block">
+							→ HessenGegenHetze
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
