@@ -2,15 +2,6 @@
 
 This is the website of [Gesichert Demokratisch Münden](https://gesichertdemokratisch-muenden.de)
 
-## Tech Stack
-
-- SvelteKit
-- TypeScript
-- Skeleton UI
-- TSParticles for background animations
-- TailwindCSS
-- FontAwesome
-
 ## Development
 
 ### Prerequisites
