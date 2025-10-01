@@ -168,7 +168,9 @@
 						<img
 							src="/img/stadtwappen-muenden.png"
 							alt="Stadtwappen Hann. Münden"
-							class="w-48 h-48 opacity-80 hover:opacity-100 transition-opacity duration-300"
+							class="w-[166px] h-[192px] opacity-80 hover:opacity-100 transition-opacity duration-300"
+							width="166"
+							height="192"
 						/>
 					</div>
 
