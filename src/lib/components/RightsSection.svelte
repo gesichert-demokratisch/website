@@ -18,9 +18,10 @@
 <section class="relative overflow-hidden">
 	<div class="relative z-10 px-6 py-24 lg:px-8">
 		<div class="mx-auto max-w-7xl">
-			<div class="rounded-3xl border border-lilac/40 bg-white p-8 md:p-12" data-aos="fade-up">
+			<div class="rounded-3xl border border-lilac/30 bg-white p-8 md:p-12 relative overflow-hidden" data-aos="fade-up">
+				<div class="absolute inset-0 bg-gradient-to-br from-lilac/40 to-lilac/15 pointer-events-none"></div>
 				<!-- Header -->
-				<div class="mb-12 text-center">
+				<div class="relative mb-12 text-center">
 					<h2 class="mb-6 text-4xl font-bold text-brand-black sm:text-5xl">Deine Rechte kennen</h2>
 					<p class="mx-auto max-w-3xl text-xl text-brand-black/70">
 						Wissen ist Macht. Hier findest du wichtige Informationen über deine Rechte und wo du
@@ -29,7 +30,7 @@
 				</div>
 
 				<!-- Rights Cards -->
-				<div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+				<div class="relative grid gap-8 md:grid-cols-2 lg:grid-cols-4">
 					<div
 						class="group rounded-2xl border border-brand-black/10 bg-white p-6 transition-all duration-300"
 						data-aos="fade-up"

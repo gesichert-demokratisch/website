@@ -36,12 +36,11 @@
 	--color-orange-red: #FF4A05;
 	--color-brand-black: #060708;
 	--color-lime: #7AD47A;
-	--color-lilac: #b581e6;
+	--color-lilac: #D4A5FF;
 }
 
 html {
 	scroll-behavior: smooth;
-	//color: #b581e6
 }
 
 body {

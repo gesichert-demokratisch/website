@@ -126,8 +126,9 @@
 
 
 <!-- Contact Section -->
-<div class="rounded-3xl bg-white border border-brand-black/10 p-8 md:p-12" data-aos="fade-up">
-	<div class="text-center mb-8">
+<div class="rounded-3xl bg-white border border-lilac/30 p-8 md:p-12 relative overflow-hidden" data-aos="fade-up">
+	<div class="absolute inset-0 bg-gradient-to-br from-lilac/40 to-lilac/15 pointer-events-none"></div>
+	<div class="relative text-center mb-8">
 		<div class="inline-flex h-16 w-16 items-center justify-center rounded-full bg-lime/20 border border-lime/30 mb-4">
 			<i class="fas fa-envelope text-2xl text-lime"></i>
 		</div>
@@ -137,7 +138,7 @@
 		</p>
 	</div>
 
-	<div class="max-w-2xl mx-auto">
+	<div class="relative max-w-2xl mx-auto">
 		<form id="contact-form" on:submit={handleSubmit} class="space-y-6">
 			<div class="grid md:grid-cols-2 gap-6">
 				<!-- Name Input -->
