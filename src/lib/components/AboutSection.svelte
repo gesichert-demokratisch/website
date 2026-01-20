@@ -19,7 +19,7 @@
 	import ContactForm from './ContactForm.svelte';
 </script>
 
-<section id="about" class="min-h-screen bg-bright-pink relative overflow-hidden">
+<section id="about" class="min-h-screen relative overflow-hidden">
 	<div class="relative z-10 px-6 py-24 lg:px-8">
 		<div class="mx-auto max-w-6xl">
 			<!-- Header -->
@@ -35,7 +35,7 @@
 
 			<!-- Core Mission -->
 			<div class="mb-20">
-				<div class="rounded-3xl bg-orange-red/20 backdrop-blur-sm border border-orange-red/30 p-8 md:p-12" data-aos="fade-up" data-aos-delay="100">
+				<div class="rounded-3xl bg-white border border-orange-red/30 p-8 md:p-12" data-aos="fade-up" data-aos-delay="100">
 					<div class="flex flex-col md:flex-row items-start space-y-6 md:space-y-0 md:space-x-8">
 						<div class="flex-shrink-0">
 							<div class="flex h-20 w-20 items-center justify-center rounded-full bg-orange-red/30 border border-orange-red/50">
@@ -61,7 +61,7 @@
 			<div class="mb-20">
 				<h3 class="text-3xl font-bold text-brand-black text-center mb-12" data-aos="fade-up">Wofür wir stehen</h3>
 				<div class="grid md:grid-cols-2 gap-8">
-					<div class="group rounded-2xl bg-white/60 backdrop-blur-sm border border-brand-black/10 p-6 hover:bg-white/80 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+					<div class="group rounded-2xl bg-white border border-brand-black/10 p-6 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
 						<div class="flex items-center mb-4">
 							<div class="flex h-14 w-14 items-center justify-center rounded-full bg-lime/20 border border-lime/30 mr-4 group-hover:scale-110 transition-transform duration-300">
 								<i class="fas fa-users text-xl text-lime"></i>
@@ -75,7 +75,7 @@
 						</p>
 					</div>
 
-					<div class="group rounded-2xl bg-white/60 backdrop-blur-sm border border-brand-black/10 p-6 hover:bg-white/80 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+					<div class="group rounded-2xl bg-white border border-brand-black/10 p-6 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
 						<div class="flex items-center mb-4">
 							<div class="flex h-14 w-14 items-center justify-center rounded-full bg-lime/20 border border-lime/30 mr-4 group-hover:scale-110 transition-transform duration-300">
 								<i class="fas fa-hand-holding-heart text-xl text-lime"></i>
@@ -88,7 +88,7 @@
 						</p>
 					</div>
 
-					<div class="group rounded-2xl bg-white/60 backdrop-blur-sm border border-brand-black/10 p-6 hover:bg-white/80 transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+					<div class="group rounded-2xl bg-white border border-brand-black/10 p-6 transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
 						<div class="flex items-center mb-4">
 							<div class="flex h-14 w-14 items-center justify-center rounded-full bg-orange-red/20 border border-orange-red/30 mr-4 group-hover:scale-110 transition-transform duration-300">
 								<i class="fas fa-memory text-xl text-orange-red"></i>
@@ -102,7 +102,7 @@
 						</p>
 					</div>
 
-					<div class="group rounded-2xl bg-white/60 backdrop-blur-sm border border-brand-black/10 p-6 hover:bg-white/80 transition-all duration-300" data-aos="fade-up" data-aos-delay="400">
+					<div class="group rounded-2xl bg-white border border-brand-black/10 p-6 transition-all duration-300" data-aos="fade-up" data-aos-delay="400">
 						<div class="flex items-center mb-4">
 							<div class="flex h-14 w-14 items-center justify-center rounded-full bg-orange-red/20 border border-orange-red/30 mr-4 group-hover:scale-110 transition-transform duration-300">
 								<i class="fas fa-shield-alt text-xl text-orange-red"></i>
@@ -120,7 +120,7 @@
 
 			<!-- What We Do -->
 			<div class="mb-20">
-				<div class="rounded-3xl bg-white/60 backdrop-blur-sm border border-brand-black/10 p-8 md:p-12" data-aos="fade-up">
+				<div class="rounded-3xl bg-white border border-brand-black/10 p-8 md:p-12" data-aos="fade-up">
 					<h3 class="text-3xl font-bold text-brand-black mb-12 text-center">Was wir tun</h3>
 
 					<div class="grid md:grid-cols-3 gap-8">
@@ -162,7 +162,7 @@
 
 			<!-- Call to Action -->
 			<div class="text-center mb-20">
-				<div class="rounded-3xl bg-lilac/30 backdrop-blur-sm border border-lilac/40 p-8 md:p-12 relative overflow-hidden" data-aos="fade-up">
+				<div class="rounded-3xl bg-white border border-lilac/40 p-8 md:p-12 relative overflow-hidden" data-aos="fade-up">
 					<!-- Coat of Arms -->
 					<div class="absolute right-4 top-1/2 transform -translate-y-1/2 hidden lg:block">
 						<img

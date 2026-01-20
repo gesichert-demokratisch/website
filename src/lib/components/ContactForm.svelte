@@ -126,7 +126,7 @@
 
 
 <!-- Contact Section -->
-<div class="rounded-3xl bg-white/60 backdrop-blur-sm border border-brand-black/10 p-8 md:p-12" data-aos="fade-up">
+<div class="rounded-3xl bg-white border border-brand-black/10 p-8 md:p-12" data-aos="fade-up">
 	<div class="text-center mb-8">
 		<div class="inline-flex h-16 w-16 items-center justify-center rounded-full bg-lime/20 border border-lime/30 mb-4">
 			<i class="fas fa-envelope text-2xl text-lime"></i>
@@ -150,7 +150,7 @@
 						type="text"
 						bind:value={formData.name}
 						required
-						class="w-full px-4 py-3 bg-white/80 border border-brand-black/20 rounded-lg text-brand-black placeholder-brand-black/40 focus:outline-none focus:ring-2 focus:ring-dark-pink focus:border-transparent transition-all backdrop-blur-sm"
+						class="w-full px-4 py-3 bg-lime/20 border border-brand-black/20 rounded-lg text-brand-black placeholder-brand-black/40 focus:outline-none focus:ring-2 focus:ring-dark-pink focus:border-transparent transition-all"
 						placeholder="Dein Name"
 						disabled={isSubmitting}
 					/>
@@ -166,7 +166,7 @@
 						type="email"
 						bind:value={formData.email}
 						required
-						class="w-full px-4 py-3 bg-white/80 border border-brand-black/20 rounded-lg text-brand-black placeholder-brand-black/40 focus:outline-none focus:ring-2 focus:ring-dark-pink focus:border-transparent transition-all backdrop-blur-sm"
+						class="w-full px-4 py-3 bg-lime/20 border border-brand-black/20 rounded-lg text-brand-black placeholder-brand-black/40 focus:outline-none focus:ring-2 focus:ring-dark-pink focus:border-transparent transition-all"
 						placeholder="deine@email.de"
 						disabled={isSubmitting}
 					/>
@@ -183,7 +183,7 @@
 					bind:value={formData.message}
 					required
 					rows="4"
-					class="w-full px-4 py-3 bg-white/80 border border-brand-black/20 rounded-lg text-brand-black placeholder-brand-black/40 focus:outline-none focus:ring-2 focus:ring-dark-pink focus:border-transparent transition-all resize-none backdrop-blur-sm"
+					class="w-full px-4 py-3 bg-lime/20 border border-brand-black/20 rounded-lg text-brand-black placeholder-brand-black/40 focus:outline-none focus:ring-2 focus:ring-dark-pink focus:border-transparent transition-all resize-none"
 					placeholder="Erzähl uns, was du auf dem Herzen hast..."
 					disabled={isSubmitting}
 				></textarea>

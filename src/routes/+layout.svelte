@@ -61,6 +61,6 @@
 	<meta name="twitter:image:alt" content="Gesichert Demokratisch Münden Logo" />
 </svelte:head>
 
-<div class="bg-surface-50-900-token text-token min-h-screen">
+<div class="bg-lime text-token min-h-screen">
 	{@render children?.()}
 </div>

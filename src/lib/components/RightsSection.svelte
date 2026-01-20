@@ -15,11 +15,11 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 
-<section class="relative overflow-hidden bg-bright-pink">
+<section class="relative overflow-hidden">
 	<div class="relative z-10 px-6 py-24 lg:px-8">
 		<div class="mx-auto max-w-7xl">
 			<div
-				class="rounded-3xl border border-lilac/40 bg-lilac/30 p-8 backdrop-blur-sm md:p-12"
+				class="rounded-3xl border border-lilac/40 bg-white p-8 md:p-12"
 				data-aos="fade-up"
 			>
 				<!-- Header -->
@@ -34,7 +34,7 @@
 				<!-- Rights Cards -->
 				<div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
 					<div
-						class="group rounded-2xl border border-brand-black/10 bg-white/60 p-6 backdrop-blur-sm transition-all duration-300 hover:bg-white/80"
+						class="group rounded-2xl border border-brand-black/10 bg-white p-6 transition-all duration-300"
 						data-aos="fade-up"
 						data-aos-delay="100"
 					>
@@ -60,7 +60,7 @@
 					</div>
 
 					<div
-						class="group rounded-2xl border border-brand-black/10 bg-white/60 p-6 backdrop-blur-sm transition-all duration-300 hover:bg-white/80"
+						class="group rounded-2xl border border-brand-black/10 bg-white p-6 transition-all duration-300"
 						data-aos="fade-up"
 						data-aos-delay="200"
 					>
@@ -86,7 +86,7 @@
 					</div>
 
 					<div
-						class="group rounded-2xl border border-brand-black/10 bg-white/60 p-6 backdrop-blur-sm transition-all duration-300 hover:bg-white/80"
+						class="group rounded-2xl border border-brand-black/10 bg-white p-6 transition-all duration-300"
 						data-aos="fade-up"
 						data-aos-delay="300"
 					>
@@ -112,7 +112,7 @@
 					</div>
 
 					<div
-						class="group rounded-2xl border border-brand-black/10 bg-white/60 p-6 backdrop-blur-sm transition-all duration-300 hover:bg-white/80"
+						class="group rounded-2xl border border-brand-black/10 bg-white p-6 transition-all duration-300"
 						data-aos="fade-up"
 						data-aos-delay="400"
 					>
