@@ -83,6 +83,14 @@
 						>
 							→ Antidiskriminierungsstelle Bund
 						</a>
+						<a
+							href="https://antifaschistisches-archiv.org/"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="text-sm font-medium text-orange-red transition-colors hover:text-orange-red/70"
+						>
+							→ Antifaschistisches Archiv
+						</a>
 					</div>
 
 					<div
