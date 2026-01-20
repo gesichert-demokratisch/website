@@ -18,10 +18,7 @@
 <section class="relative overflow-hidden">
 	<div class="relative z-10 px-6 py-24 lg:px-8">
 		<div class="mx-auto max-w-7xl">
-			<div
-				class="rounded-3xl border border-lilac/40 bg-white p-8 md:p-12"
-				data-aos="fade-up"
-			>
+			<div class="rounded-3xl border border-lilac/40 bg-white p-8 md:p-12" data-aos="fade-up">
 				<!-- Header -->
 				<div class="mb-12 text-center">
 					<h2 class="mb-6 text-4xl font-bold text-brand-black sm:text-5xl">Deine Rechte kennen</h2>
@@ -75,22 +72,24 @@
 							<li>• Rechtliche Aufklärung über AGG</li>
 							<li>• Vermittlung lokaler Beratungsstellen</li>
 						</ul>
-						<a
-							href="https://www.antidiskriminierungsstelle.de/"
-							target="_blank"
-							rel="noopener noreferrer"
-							class="text-sm font-medium text-orange-red transition-colors hover:text-orange-red/70"
-						>
-							→ Antidiskriminierungsstelle Bund
-						</a>
-						<a
-							href="https://antifaschistisches-archiv.org/"
-							target="_blank"
-							rel="noopener noreferrer"
-							class="text-sm font-medium text-orange-red transition-colors hover:text-orange-red/70"
-						>
-							→ Antifaschistisches Archiv
-						</a>
+						<div class="space-y-2">
+							<a
+								href="https://www.antidiskriminierungsstelle.de/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="block text-sm font-medium text-orange-red transition-colors hover:text-orange-red/70"
+							>
+								→ Antidiskriminierungsstelle Bund
+							</a>
+							<a
+								href="https://antifaschistisches-archiv.org/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="block text-sm font-medium text-orange-red transition-colors hover:text-orange-red/70"
+							>
+								→ Antifaschistisches Archiv
+							</a>
+						</div>
 					</div>
 
 					<div
