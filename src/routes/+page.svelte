@@ -112,7 +112,7 @@
 </script>
 
 <div
-	class="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-gradient-to-br from-dark-pink via-orange-red to-lime"
+	class="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-gradient-to-b from-orange-red to-lime"
 >
 	<!-- TSParticles background -->
 	<div class="absolute inset-0">
