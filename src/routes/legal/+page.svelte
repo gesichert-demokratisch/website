@@ -34,14 +34,14 @@
 </svelte:head>
 
 <div
-	class="min-h-screen bg-gradient-to-br from-primary-500 via-secondary-500 to-tertiary-600 text-white"
+	class="min-h-screen bg-gradient-to-br from-dark-pink via-orange-red to-lime text-brand-black"
 >
 	<div class="container mx-auto max-w-4xl px-4 py-16">
 		<!-- Back Navigation -->
 		<div class="mb-8">
 			<a
 				href="/"
-				class="inline-flex items-center space-x-2 text-white/80 transition-colors duration-200 hover:text-white"
+				class="inline-flex items-center space-x-2 text-brand-black/80 transition-colors duration-200 hover:text-brand-black"
 			>
 				<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 					<path
@@ -56,18 +56,18 @@
 		</div>
 
 		<!-- Content -->
-		<div class="rounded-lg bg-white/10 p-4 shadow-xl backdrop-blur-sm sm:p-8 md:p-12">
+		<div class="rounded-lg bg-white/60 p-4 shadow-xl backdrop-blur-sm sm:p-8 md:p-12">
 			<div
-				class="overflow-wrap-anywhere prose max-w-none text-center break-words prose-invert md:text-left"
+				class="overflow-wrap-anywhere prose max-w-none text-center break-words md:text-left"
 			>
-				<p class="mb-8 text-sm text-white/60">Stand: {currentDate}</p>
+				<p class="mb-8 text-sm text-brand-black/60">Stand: {currentDate}</p>
 
 				<!-- Impressum -->
 				<section class="mb-12">
-					<h1 class="mb-6 text-2xl font-bold break-words text-white sm:text-3xl">Impressum</h1>
-					<p class="mb-6 text-sm text-white/80">Angaben gemäß § 5 DDG</p>
+					<h1 class="mb-6 text-2xl font-bold break-words text-brand-black sm:text-3xl">Impressum</h1>
+					<p class="mb-6 text-sm text-brand-black/80">Angaben gemäß § 5 DDG</p>
 
-					<div class="text-white/90">
+					<div class="text-brand-black/90">
 						<p>
 							<strong>Gesichert Demokratisch Münden</strong><br />
 							c/o Marcus Huber<br />
@@ -76,18 +76,18 @@
 						</p>
 					</div>
 
-					<div class="mt-6 space-y-2 text-white/90">
+					<div class="mt-6 space-y-2 text-brand-black/90">
 						<p><strong>Kontakt:</strong></p>
 						<p>
 							E-Mail: <a
 								href="mailto:wirsind@gesichertdemokratisch-muenden.de"
-								class="text-blue-300 underline hover:text-blue-200"
+								class="text-orange-red underline hover:text-orange-red/70"
 								>wirsind@gesichertdemokratisch-muenden.de</a
 							>
 						</p>
 					</div>
 
-					<!-- <div class="mt-6 text-white/80">
+					<!-- <div class="mt-6 text-brand-black/80">
 						<h3 class="text-base sm:text-lg font-semibold mb-2 break-words">Inhaltlich verantwortlich</h3>
 						<p class="text-sm leading-relaxed mb-4">
 							Marcus Huber<br>
@@ -96,7 +96,7 @@
 						</p>
 					</div> -->
 
-					<div class="mt-6 text-white/80">
+					<div class="mt-6 text-brand-black/80">
 						<h3 class="mb-2 text-base font-semibold break-words sm:text-lg">Haftung für Inhalte</h3>
 						<p class="text-sm leading-relaxed">
 							Für alle eigenen Inhalte auf diesen Seiten ist die oben genannte Person nach den
@@ -108,7 +108,7 @@
 						</p>
 					</div>
 
-					<div class="mt-6 text-white/80">
+					<div class="mt-6 text-brand-black/80">
 						<h3 class="mb-2 text-base font-semibold break-words sm:text-lg">Haftung für Links</h3>
 						<p class="text-sm leading-relaxed">
 							Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen
@@ -121,13 +121,13 @@
 
 				<!-- Datenschutzerklärung -->
 				<section class="mb-12">
-					<h1 class="mb-6 text-2xl font-bold break-words text-white sm:text-3xl">
+					<h1 class="mb-6 text-2xl font-bold break-words text-brand-black sm:text-3xl">
 						Datenschutzerklärung
 					</h1>
 
-					<div class="space-y-6 text-white/80">
+					<div class="space-y-6 text-brand-black/80">
 						<div>
-							<h3 class="mb-2 text-base font-semibold break-words text-white/90 sm:text-lg">
+							<h3 class="mb-2 text-base font-semibold break-words text-brand-black/90 sm:text-lg">
 								1. Datenschutz auf einen Blick
 							</h3>
 							<p class="text-sm leading-relaxed">
@@ -137,10 +137,10 @@
 						</div>
 
 						<div>
-							<h3 class="mb-2 text-base font-semibold break-words text-white/90 sm:text-lg">
+							<h3 class="mb-2 text-base font-semibold break-words text-brand-black/90 sm:text-lg">
 								2. Allgemeine Hinweise und Pflichtinformationen
 							</h3>
-							<h4 class="mb-2 text-sm font-medium break-words text-white/90 sm:text-base">
+							<h4 class="mb-2 text-sm font-medium break-words text-brand-black/90 sm:text-base">
 								Datenschutz
 							</h4>
 							<p class="text-sm leading-relaxed">
@@ -151,10 +151,10 @@
 						</div>
 
 						<div>
-							<h3 class="mb-2 text-base font-semibold break-words text-white/90 sm:text-lg">
+							<h3 class="mb-2 text-base font-semibold break-words text-brand-black/90 sm:text-lg">
 								3. Datenerfassung auf unserer Website
 							</h3>
-							<h4 class="mb-2 text-sm font-medium break-words text-white/90 sm:text-base">
+							<h4 class="mb-2 text-sm font-medium break-words text-brand-black/90 sm:text-base">
 								Server-Log-Dateien
 							</h4>
 							<p class="text-sm leading-relaxed">
@@ -169,7 +169,7 @@
 						</div>
 
 						<div>
-							<h3 class="mb-2 text-base font-semibold break-words text-white/90 sm:text-lg">
+							<h3 class="mb-2 text-base font-semibold break-words text-brand-black/90 sm:text-lg">
 								4. Ihre Rechte
 							</h3>
 							<p class="text-sm leading-relaxed">
@@ -181,14 +181,14 @@
 						</div>
 
 						<div>
-							<h3 class="mb-2 text-base font-semibold break-words text-white/90 sm:text-lg">
+							<h3 class="mb-2 text-base font-semibold break-words text-brand-black/90 sm:text-lg">
 								5. Kontakt
 							</h3>
 							<p class="text-sm leading-relaxed">
 								Bei Fragen zum Datenschutz wenden Sie sich bitte an:
 								<a
 									href="mailto:wirsind@gesichertdemokratisch-muenden.de"
-									class="text-blue-300 underline hover:text-blue-200"
+									class="text-orange-red underline hover:text-orange-red/70"
 								>
 									wirsind@gesichertdemokratisch-muenden.de
 								</a>
@@ -199,8 +199,8 @@
 
 				<!-- Copyright -->
 				<section>
-					<h1 class="mb-6 text-2xl font-bold break-words text-white sm:text-3xl">Copyright</h1>
-					<div class="space-y-4 text-white/80">
+					<h1 class="mb-6 text-2xl font-bold break-words text-brand-black sm:text-3xl">Copyright</h1>
+					<div class="space-y-4 text-brand-black/80">
 						<div>
 							<h3 class="mb-2 text-base font-semibold break-words sm:text-lg">Website-Quellcode</h3>
 							<p class="text-sm leading-relaxed">
@@ -208,12 +208,12 @@
 								<a
 									href="https://www.gnu.org/licenses/agpl-3.0.html"
 									target="_blank"
-									class="text-blue-300 underline hover:text-blue-200">AGPLv3-Lizenz</a
+									class="text-orange-red underline hover:text-orange-red/70">AGPLv3-Lizenz</a
 								>. Der Quellcode ist verfügbar auf
 								<a
 									href="https://github.com/gesichert-demokratisch/website"
 									target="_blank"
-									class="text-blue-300 underline hover:text-blue-200">GitHub</a
+									class="text-orange-red underline hover:text-orange-red/70">GitHub</a
 								>.
 							</p>
 						</div>
@@ -224,7 +224,7 @@
 								Das "Gesichert Demokratisch Münden"-Logo wurde erstellt von Barbara Brübach (<a
 									href="https://www.fettetypen.de"
 									target="_blank"
-									class="text-blue-300 underline hover:text-blue-200">www.fettetypen.de</a
+									class="text-orange-red underline hover:text-orange-red/70">www.fettetypen.de</a
 								>). Alle Rechte vorbehalten.
 							</p>
 						</div>

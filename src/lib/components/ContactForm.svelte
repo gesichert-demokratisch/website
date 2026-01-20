@@ -126,13 +126,13 @@
 
 
 <!-- Contact Section -->
-<div class="rounded-3xl bg-gradient-to-br from-slate-800/80 via-slate-700/80 to-slate-800/80 backdrop-blur-sm border border-slate-600/50 p-8 md:p-12" data-aos="fade-up">
+<div class="rounded-3xl bg-white/60 backdrop-blur-sm border border-brand-black/10 p-8 md:p-12" data-aos="fade-up">
 	<div class="text-center mb-8">
-		<div class="inline-flex h-16 w-16 items-center justify-center rounded-full bg-blue-500/20 border border-blue-400/30 mb-4">
-			<i class="fas fa-envelope text-2xl text-blue-300"></i>
+		<div class="inline-flex h-16 w-16 items-center justify-center rounded-full bg-lime/20 border border-lime/30 mb-4">
+			<i class="fas fa-envelope text-2xl text-lime"></i>
 		</div>
-		<h3 class="text-3xl font-bold text-white mb-4">Schreib uns!</h3>
-		<p class="text-white/80 max-w-2xl mx-auto">
+		<h3 class="text-3xl font-bold text-brand-black mb-4">Schreib uns!</h3>
+		<p class="text-brand-black/70 max-w-2xl mx-auto">
 			Hast du Fragen, Anregungen oder möchtest dich engagieren? Wir freuen uns auf deine Nachricht!
 		</p>
 	</div>
@@ -142,7 +142,7 @@
 			<div class="grid md:grid-cols-2 gap-6">
 				<!-- Name Input -->
 				<div>
-					<label for="name" class="block text-sm font-medium text-white mb-2">
+					<label for="name" class="block text-sm font-medium text-brand-black mb-2">
 						Name *
 					</label>
 					<input
@@ -150,7 +150,7 @@
 						type="text"
 						bind:value={formData.name}
 						required
-						class="w-full px-4 py-3 bg-slate-700/50 border border-slate-600/50 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all backdrop-blur-sm"
+						class="w-full px-4 py-3 bg-white/80 border border-brand-black/20 rounded-lg text-brand-black placeholder-brand-black/40 focus:outline-none focus:ring-2 focus:ring-dark-pink focus:border-transparent transition-all backdrop-blur-sm"
 						placeholder="Dein Name"
 						disabled={isSubmitting}
 					/>
@@ -158,7 +158,7 @@
 
 				<!-- Email Input -->
 				<div>
-					<label for="email" class="block text-sm font-medium text-white mb-2">
+					<label for="email" class="block text-sm font-medium text-brand-black mb-2">
 						E-Mail *
 					</label>
 					<input
@@ -166,7 +166,7 @@
 						type="email"
 						bind:value={formData.email}
 						required
-						class="w-full px-4 py-3 bg-slate-700/50 border border-slate-600/50 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all backdrop-blur-sm"
+						class="w-full px-4 py-3 bg-white/80 border border-brand-black/20 rounded-lg text-brand-black placeholder-brand-black/40 focus:outline-none focus:ring-2 focus:ring-dark-pink focus:border-transparent transition-all backdrop-blur-sm"
 						placeholder="deine@email.de"
 						disabled={isSubmitting}
 					/>
@@ -175,7 +175,7 @@
 
 			<!-- Message Input -->
 			<div>
-				<label for="message" class="block text-sm font-medium text-white mb-2">
+				<label for="message" class="block text-sm font-medium text-brand-black mb-2">
 					Nachricht *
 				</label>
 				<textarea
@@ -183,11 +183,11 @@
 					bind:value={formData.message}
 					required
 					rows="4"
-					class="w-full px-4 py-3 bg-slate-700/50 border border-slate-600/50 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none backdrop-blur-sm"
+					class="w-full px-4 py-3 bg-white/80 border border-brand-black/20 rounded-lg text-brand-black placeholder-brand-black/40 focus:outline-none focus:ring-2 focus:ring-dark-pink focus:border-transparent transition-all resize-none backdrop-blur-sm"
 					placeholder="Erzähl uns, was du auf dem Herzen hast..."
 					disabled={isSubmitting}
 				></textarea>
-				<div class="text-xs text-slate-400 mt-1 text-right">
+				<div class="text-xs text-brand-black/50 mt-1 text-right">
 					{formData.message.length}/5000 Zeichen
 				</div>
 			</div>
@@ -195,7 +195,7 @@
 			<!-- Response Message -->
 			{#if responseMessage}
 				<div
-					class="p-4 rounded-lg {isError ? 'bg-red-900/50 border border-red-700/50 text-red-200' : 'bg-green-900/50 border border-green-700/50 text-green-200'}"
+					class="p-4 rounded-lg {isError ? 'bg-orange-red/20 border border-orange-red/30 text-brand-black' : 'bg-lime/20 border border-lime/30 text-brand-black'}"
 				>
 					{responseMessage}
 				</div>
@@ -216,7 +216,7 @@
 					id="submit-button"
 					type="submit"
 					disabled={isSubmitting || !isAltchaReady}
-					class="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r transition-all duration-300 text-white font-medium rounded-lg {isAltchaReady && !isSubmitting ? 'from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 hover:scale-105 hover:shadow-xl' : 'from-gray-600 to-gray-700 cursor-not-allowed opacity-60'}"
+					class="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r transition-all duration-300 text-brand-black font-medium rounded-lg {isAltchaReady && !isSubmitting ? 'from-lime to-lime hover:brightness-110 hover:scale-105 hover:shadow-xl' : 'from-brand-black/40 to-brand-black/50 cursor-not-allowed opacity-60'}"
 				>
 					{#if isSubmitting}
 						<i class="fas fa-spinner fa-spin mr-2"></i>
@@ -236,33 +236,33 @@
 
 <style>
 	:global(.altcha-widget) {
-		--altcha-color-base: #1e293b;
-		--altcha-color-text: #f8fafc;
-		--altcha-color-border: #475569;
-		--altcha-color-border-focus: #3b82f6;
-		--altcha-color-accent: #3b82f6;
-		--altcha-color-footer-bg: #0f172a;
-		--altcha-color-footer-text: #cbd5e1;
+		--altcha-color-base: #ffffff;
+		--altcha-color-text: #060708;
+		--altcha-color-border: #06070820;
+		--altcha-color-border-focus: #FFA6E3;
+		--altcha-color-accent: #FFA6E3;
+		--altcha-color-footer-bg: #FFC7DE;
+		--altcha-color-footer-text: #060708;
 		--altcha-border-radius: 8px;
 		--altcha-max-width: 100%;
 	}
 
 	:global(.altcha-checkbox) {
-		background-color: #1e293b !important;
-		border-color: #475569 !important;
-		color: #f8fafc !important;
+		background-color: #ffffff !important;
+		border-color: #06070820 !important;
+		color: #060708 !important;
 	}
 
 	:global(.altcha-label) {
-		color: #f8fafc !important;
+		color: #060708 !important;
 	}
 
 	:global(.altcha-footer) {
-		background-color: #0f172a !important;
-		color: #cbd5e1 !important;
+		background-color: #FFC7DE !important;
+		color: #060708 !important;
 	}
 
 	:global(.altcha-footer a) {
-		color: #3b82f6 !important;
+		color: #FF4A05 !important;
 	}
 </style>

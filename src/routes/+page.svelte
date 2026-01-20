@@ -112,7 +112,7 @@
 </script>
 
 <div
-	class="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-gradient-to-br from-primary-500 via-secondary-500 to-tertiary-600"
+	class="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-gradient-to-br from-dark-pink via-orange-red to-lime"
 >
 	<!-- TSParticles background -->
 	<div class="absolute inset-0">
@@ -126,7 +126,7 @@
 		<!-- Logo -->
 		<div class="group relative" data-aos="fade-down">
 			<div
-				class="absolute -inset-8 rounded-full bg-purple-400 opacity-50 blur-2xl transition-opacity duration-500 group-hover:opacity-80"
+				class="absolute -inset-8 rounded-full bg-lime opacity-50 blur-2xl transition-opacity duration-500 group-hover:opacity-80"
 			></div>
 			<div class="relative p-8">
 				<img
@@ -148,13 +148,13 @@
 			<!-- Email Button -->
 			<a
 				href="mailto:wirsind@gesichertdemokratisch-muenden.de"
-				class="group relative inline-block overflow-hidden rounded-full border border-slate-700/50 bg-slate-900/80 px-8 py-4 font-medium text-white backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:border-slate-600 hover:bg-slate-800/90 hover:shadow-xl"
+				class="group relative inline-block overflow-hidden rounded-full border border-brand-black/50 bg-brand-black/80 px-8 py-4 font-medium text-white backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:border-brand-black/60 hover:bg-brand-black/90 hover:shadow-xl"
 			>
 				<div
-					class="absolute inset-0 bg-gradient-to-r from-blue-400/10 to-cyan-400/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+					class="absolute inset-0 bg-gradient-to-r from-bright-pink/10 to-lilac/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
 				></div>
 				<div class="relative flex items-center space-x-3">
-					<div class="text-2xl text-blue-400">
+					<div class="text-2xl text-lilac">
 						<i class="fas fa-envelope"></i>
 					</div>
 					<span class="text-lg">E-Mail</span>
@@ -166,7 +166,7 @@
 				href="https://www.instagram.com/gesichert_demokratisch_muenden/"
 				target="_blank"
 				rel="noopener noreferrer"
-				class="group relative inline-block overflow-hidden rounded-full bg-gradient-to-r from-orange-500 to-pink-500 px-8 py-4 font-medium text-white transition-all duration-300 hover:scale-105 hover:from-orange-400 hover:to-pink-400 hover:shadow-xl"
+				class="group relative inline-block overflow-hidden rounded-full bg-gradient-to-r from-orange-red to-orange-red/70 px-8 py-4 font-medium text-white transition-all duration-300 hover:scale-105 hover:brightness-110 hover:shadow-xl"
 			>
 				<div
 					class="absolute inset-0 bg-white/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
@@ -188,13 +188,13 @@
 				onmouseleave={(e) => {
 					e.currentTarget.classList.remove('animate__animated', 'animate__tada');
 				}}
-				class="animate__animated animate__bounceIn sm:hidden group relative inline-block overflow-hidden rounded-full border border-slate-700/50 bg-slate-900/80 px-4 py-2 font-medium text-white backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:border-slate-600 hover:bg-slate-800/90 hover:shadow-xl"
+				class="animate__animated animate__bounceIn sm:hidden group relative inline-block overflow-hidden rounded-full border border-brand-black/50 bg-brand-black/80 px-4 py-2 font-medium text-white backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:border-brand-black/60 hover:bg-brand-black/90 hover:shadow-xl"
 			>
 				<div
-					class="absolute inset-0 bg-gradient-to-r from-purple-400/10 to-pink-400/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+					class="absolute inset-0 bg-gradient-to-r from-lilac/10 to-dark-pink/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
 				></div>
 				<div class="relative flex items-center space-x-2">
-					<div class="text-lg text-purple-400">
+					<div class="text-lg text-lilac">
 						<i class="fas fa-arrow-down"></i>
 					</div>
 					<span class="text-base">Mehr erfahren</span>
@@ -213,13 +213,13 @@
 			onmouseleave={(e) => {
 				e.currentTarget.classList.remove('animate__animated', 'animate__tada');
 			}}
-			class="animate__animated animate__bounceIn group relative inline-block overflow-hidden rounded-full border border-slate-700/50 bg-slate-900/80 px-8 py-4 font-medium text-white backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:border-slate-600 hover:bg-slate-800/90 hover:shadow-xl"
+			class="animate__animated animate__bounceIn group relative inline-block overflow-hidden rounded-full border border-brand-black/50 bg-brand-black/80 px-8 py-4 font-medium text-white backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:border-brand-black/60 hover:bg-brand-black/90 hover:shadow-xl"
 		>
 			<div
-				class="absolute inset-0 bg-gradient-to-r from-purple-400/10 to-pink-400/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+				class="absolute inset-0 bg-gradient-to-r from-lilac/10 to-dark-pink/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
 			></div>
 			<div class="relative flex items-center space-x-3">
-				<div class="text-2xl text-purple-400">
+				<div class="text-2xl text-lilac">
 					<i class="fas fa-arrow-down"></i>
 				</div>
 				<span class="text-lg">Mehr erfahren</span>
@@ -231,7 +231,7 @@
 	<div class="absolute bottom-4 right-4">
 		<a
 			href="/legal"
-			class="text-white/60 hover:text-white/90 text-sm transition-colors duration-200"
+			class="text-brand-black/60 hover:text-brand-black/90 text-sm transition-colors duration-200"
 		>
 			Impressum & Datenschutz
 		</a>

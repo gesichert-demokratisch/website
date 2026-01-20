@@ -29,8 +29,19 @@
 
 @source '../node_modules/@skeletonlabs/skeleton-svelte/dist';
 
+/* Custom color palette */
+@theme {
+	--color-bright-pink: #FFC7DE;
+	--color-dark-pink: #FFA6E3;
+	--color-orange-red: #FF4A05;
+	--color-brand-black: #060708;
+	--color-lime: #7AD47A;
+	--color-lilac: #b581e6;
+}
+
 html {
 	scroll-behavior: smooth;
+	//color: #b581e6
 }
 
 body {
